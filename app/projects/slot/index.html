@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+
+<head>
+    <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+    <link rel="stylesheet" href="css/main.css">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <title>Slot Machine</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="game-container hidden">
+            <div class="game-block">
+                <h2 id="message" class="game-message">Select deposit and start to play!</h2>
+                <div class="game-images">
+                    <img id="img1" class="slotImage" src="svg/heart.svg">
+                    <img id="img2" class="slotImage" src="svg/heart.svg">
+                    <img id="img3" class="slotImage" src="svg/heart.svg">
+                </div>
+                <div class="game-controller">
+                    <div class="buttons">
+                        <audio id="audio-false" src="audio/oh_no.wav" autostart="false"></audio>
+                        <audio id="audio-lose" src="audio/bye.wav" autostart="false"></audio>
+                        <audio id="audio-win" src="audio/wow.wav" autostart="false"></audio>
+                        <audio id="audio-bg" src="audio/bg.wav" autoplay loop></audio>
+                        <div id="play" class="play btn"><img src="images/play.png" alt=""></div>
+                        <div id="cashOut" class="btn"><img src="images/co.png" alt=""></div>
+                    </div>
+                    <div class="bet">
+                        <label for="" class="b">Bet:</label>
+                        <input type="radio" name="bet" id="radio-option-1" value="1" checked>
+                        <label for="radio-option-1">1</label>
+                        <input type="radio" name="bet" id="radio-option-2" value="2">
+                        <label for="radio-option-2">2</label>
+                        <input type="radio" name="bet" id="radio-option-3" value="3">
+                        <label for="radio-option-3">3</label>
+                    </div>
+                    <div class="score">
+                        <label for="" class="d">Deposit<i class="fa fa-arrow-down"></i>:</label>
+                        <select id="dropdown" class="dropDown">
+                          <option value="0" select="selected">Select Deposit</option>
+                          <option value="5">5</option>
+                          <option value="10">10</option>
+                          <option value="20">20</option>
+                      </select>
+                        <label for="">Credits<i class="fa fa-star">:</label></i>
+                        <input id="credit" type="text" value="0">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="./js/main.js" type="text/javascript"></script>
+</body>
+
+</html>
