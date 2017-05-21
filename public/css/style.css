@@ -1,0 +1,9 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: #333;
+  color: red; }
+
+.test {
+  background-color: red;
+  border: 1px #333 solid; }

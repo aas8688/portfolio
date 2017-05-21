@@ -1,0 +1,38 @@
+{
+  "name": "jason",
+  "version": "1.0.0",
+  "description": "portfolio page",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aas8688/portfolio.git"
+  },
+  "keywords": [
+    "portfolio",
+    "work"
+  ],
+  "author": "jason",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aas8688/portfolio/issues"
+  },
+  "homepage": "https://github.com/aas8688/portfolio#readme",
+  "devDependencies": {
+    "browser-sync": "^2.18.11",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-clean-css": "^3.3.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-htmlmin": "^3.0.0",
+    "gulp-if": "^2.0.2",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-uglify": "^2.1.2",
+    "gulp-util": "^3.0.8",
+    "sass": "^0.5.0"
+  }
+}
