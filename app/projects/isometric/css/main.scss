@@ -1,0 +1,109 @@
+body,
+html {
+	margin: 0;
+	padding: 0;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+header {
+	width: 100%;
+	height: 10vh;
+	text-align: center;
+	margin: 0;
+	padding-top: 1em;
+
+	h1 {
+		font-size: 3em;
+		width: 500px;
+		margin: 0 auto;
+		padding: 0.2em 0;
+		font-family: 'Lato', sans-serif;
+		border-top: 3px #c0392b solid;
+		border-bottom: 3px #2980b9 solid;
+	}
+}
+
+article {
+	.row {
+		padding: 1em;
+		width: 95vw;
+		height: 80vh;
+		box-sizing: border-box;
+		margin: 0 auto;
+
+		h1 {
+			text-align: center;
+		}
+	}
+
+	.svg {
+		border: 1px #333 solid;
+		background-color: #f6f6f6;
+		width: 55%;
+		height: 100%;
+		display: inline-block;
+		box-sizing: border-box;
+	}
+
+	.descContainer {
+		width: 35%;
+		height: auto;
+		display: inline-block;
+		float: right;
+		box-sizing: border-box;
+		margin-right: 5%;
+		padding-left: 1em;
+		border-left: 3px #2c3e50 solid;
+
+		.desc h3 {
+			color: rgb(175, 34, 38);
+		}
+	}
+
+	.svgDescContainer {
+		// background-color: #f6f6f6;
+		// border-top: 1px #333 solid;
+		box-sizing: border-box;
+		// padding-left: 1em;
+		margin-top: 3em;
+		height: 200px;
+		text-align: left;
+
+		.svgTitle {
+			font-size: 1.3em;
+			text-align: left;
+			text-transform: uppercase;
+			color: #333;
+			box-sizing: border-box;
+		}
+
+		.svgDesc {
+			padding-top: 2em;
+		}
+	}
+
+	.svgTitle:after {
+		content: '';
+		display: block;
+		width: 10em;
+		height: 3px;
+		background: #27ae60;
+		position: relative;
+		top: 1em;
+		left: 0;
+	}
+}
+
+footer {
+	width: 91%;
+	box-sizing: border-box;
+	padding-left: 1em;
+	margin: 0 auto;
+}
+
+#mainSVG {
+	width: 120%;
+	height: 100%;
+	margin-left: -9%;
+	box-sizing: border-box;
+}

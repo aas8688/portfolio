@@ -1,0 +1,111 @@
+<!doctype html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./css/checkbox.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Mr.Pizza</title>
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="title">
+                <h1>Mr.Pizza</h1>
+            </div>
+        </header>
+        <section class="promot-feature clearfix">
+            <div class="column fourth card-promot" id="promot1" data-price="11.99" data-id="Pepperoni Pizza"><span>PEPPERONI PIZZA</span><img  src="./images/p1.png" alt="">
+                <span class="customize">CUSTOMIZE</span></div>
+            <div class="column fourth card-promot" id="promot2" data-price="12.99" data-id="Buffalo Chicken"><span>BUFFALO CHICKEN</span><img src="./images/p2.png" alt="">
+                <span class="customize">CUSTOMIZE</span></div>
+            <div class="column fourth card-promot" id="promot3" data-price="13.99" data-id="Chipotle Steak"><span>CHIPOTLE STEAK</span> <img src="./images/p3.png" alt=""><span class="customize">CUSTOMIZE</span></div>
+            <div class="column fourth card-promot" id="promot4" data-price="13.99" data-id="Classic Super"><span>CLASSIC SUPER</span> <img  src="./images/p4.png" alt="" ><span class="customize">CUSTOMIZE</span></div>
+        </section>
+        <div class="row">
+            <div class="column third">
+                <div class="configurator">
+                    <div class="styled-select orange semi-square">
+                        <select id="config-size" class="" title="Choose Size">
+                            <option data- image=".bigthick" class="sizes" value="l" data-title="large">14" Large $16.00
+                            </option>
+                            <option data-image=".mediumthick" class="sizes" value="m">12" Medium $13.25</option>
+                            <option data- image=".smallthick" class="sizes" value="s">9" Small $11.30</option>
+                        </select>
+                    </div>
+                    <div class="styled-select orange semi-square">
+                        <select id="config-crust" class="" title="Choose Crust">
+                            <option value="1">Pan Pizze</option>
+                            <option value="2">The Edge</option>
+                            <option value="3">Stuffed Crust</option>
+                        </select>
+                    </div>
+                    <div id="config-crust">
+                        <div class="config-block">
+                            <label for=""><span class="category">Choose Cheese</span></label>
+                            <br>
+                            <input id="smoked-Cheese" type="checkbox" class="checkbox-yo" data-image=".smokedC" data-price="1.95" value="1" data-label-id="Smoked Cheese" class="choose-topping">
+                            <label>Smoked Cheese</label>
+                            <br>
+                            <input id="extra-cheese" type="checkbox" class="checkbox-yo" data-image=".extraC" data-price="1.95" value="1" data-label-id="Extra Cheese" class="choose-topping">
+                            <label>Extra Cheese</label>
+                            <br>
+                            <input id="feta-cheese" type="checkbox" class="checkbox-yo" data-image=".FC" data-price="1.95" value="1" data-label-id="Feta Cheese" class="choose-topping">
+                            <label>Feta Cheese</label>
+                        </div>
+                        <div class="config-block">
+                            <label for=""><span class="category">Choose Meat</span></label>
+                            <br>
+                            <input id="steak" type="checkbox" class="checkbox-yo" data-image=".steak" data-price="1.35" value="1" data-label-id="Steak" class="choose-topping">
+                            <label>Steak</label>
+                            <br>
+                            <input id="chicken" type="checkbox" class="checkbox-yo" data-image=".chicken" data-price="1.35" value="1" data-label-id="Chicken" class="choose-topping">
+                            <label>Chicken</label>
+                            <br>
+                            <input id="pepperoni" type="checkbox" class="checkbox-yo" data-image=".pepperoni" data-price="0.75" value="1" data-label-id="Pepperoni" class="choose-topping">
+                            <label>Pepperoni</label>
+                            <br>
+                            <input id="ham" type="checkbox" class="checkbox-yo" data-image=".ham" data-price="0.75" value="1" data-label-id="Ham" class="choose-topping">
+                            <label>Ham</label>
+                        </div>
+                        <div class="config-block">
+                            <label for=""><span class="category">Choose Veggie</span></label>
+                            <br>
+                            <input id="onions" type="checkbox" class="checkbox-yo" data-image=".onion" data-price="0.45" value="1" data-label-id="Onion" class="choose-topping">
+                            <label>Onions</label>
+                            <br>
+                            <input id="peppers" type="checkbox" class="checkbox-yo" data-image=".pepper" data-price="1.00" value="1" data-label-id="Peppers" class="choose-topping">
+                            <label>Peppers</label>
+                            <br>
+                            <input id="pineapple" type="checkbox" class="checkbox-yo" data-image=".pineapple" data-price="0.75" value="1" data-label-id="Pineapple" class="choose-topping">
+                            <label>Pineapple</label>
+                            <br>
+                            <input id="tomato" type="checkbox" class="checkbox-yo" data-image=".tomato" data-price="0.45" value="1" data-label-id="Tomatoes" class="choose-topping">
+                            <label>Tomatoes</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="column third">
+                <div class="product-display clearfix" id="product-display">
+                    <div class="img-display">
+                        <img src="images/pan.png" class="img-size" id="image"> <img src="images/smokedC.png" class="smokedC topping"> <img src="images/extraC.png" class="extraC topping"> <img src="images/FC.png" class="FC topping"> <img src="images/pineapple.png" class="pineapple topping"> <img src="images/ham.png" class="ham topping"> <img src="images/pepperoni.png" class="pepperoni topping"> <img src="images/onion.png" class="onion topping"> <img src="images/pepper.png" class="pepper topping"> <img src="images/steak.png" class="steak topping"> <img src="images/chicken.png" class="chicken topping"> <img src="images/tomato.png" class="tomato topping">
+                    </div>
+                </div>
+            </div>
+            <div class=" column third" >
+                <div class="cart" id="cart">
+                    <h2>Cart</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="./js/jquery.js"></script>
+    <script type="text/javascript" src="./js/main.js" /></script>
+</body>
+
+</html>
